@@ -1,5 +1,5 @@
 
-##Collection và collections
+## I.Collection và collections
 
 "Collection" và "Collections" trong java là hai khái niệm khác nhau.
 
@@ -8,13 +8,13 @@
 **Collection trong java** là một root interface trong hệ thống cấp bậc Collection. Java Collection cung cấp nhiều interface (Set, List, Queue, Deque vv) và các lớp (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet vv).
 
 ![example](https://viettuts.vn/images/java/java-collection/colection-vs-collections-trong-java.png)
-###1.Hệ thống cấp bậc Collection trong java
+### 1.Hệ thống cấp bậc Collection trong java
 
 Gói java.util chứa tất cả các lớp và interface của Collection.
 ![example](https://viettuts.vn/images/java/java-collection/he-thong-cap-bac-colection-trong-java.png)
 
 
-###2.Dưới đây là mô tả những interface chính của Collection
+### 2.Dưới đây là mô tả những interface chính của Collection
 
 * **Set:** là một collection không thể chứa 2 giá trị trùng lặp. Set được sử dụng để biểu diễn các bộ, chẳng hạn như bộ tú lu khơ, thời khóa biểu của học sinh, các tiến trình đang chạy trên máy tính...
 * **List:** là một collection có thứ tự (đôi khi còn được gọi là một chuỗi). List có thể chứa các phần tử trùng lặp. Thường có quyền kiểm soát chính xác vị trí các phần tử được chèn vào và có thể truy cập chúng bằng chỉ số (vị trí của chúng).
@@ -22,12 +22,12 @@ Gói java.util chứa tất cả các lớp và interface của Collection.
 * **Deque:** là một collection được sử dụng để chứa nhiều phần tử trước khi xử lý. Ngoài các thao tác cơ bản của collection, một Deque cung cấp các thao tác bổ sung như chèn, lấy ra và kiểm tra. Deques có thể được sử dụng như là FIFO (first-in, first-out - vào trước, ra trước) và LIFO (last-in, first-out - vào sau, ra trước). Trong một Deque, tất cả các phần tử mới có thể được chèn vào, lấy ra và lấy ra ở cả hai đầu.
 * **Map:** là một đối tượng ánh xạ mỗi key tương úng với một giá trị. Map không thể chứa giá trị trùng lặp. Mỗi key có thể ánh xạ đến nhiều nhất một giá trị.
 
-###3.Dưới đây là mô tả 2 interface được sắp xếp của Set mà Map
+### 3.Dưới đây là mô tả 2 interface được sắp xếp của Set mà Map
 
 * **SortedSet:** là một Set chứa các phần tử theo thứ tự tăng dần.
 * **SortedMap:** là một Map chứa các phần tử được sắp xếp theo thứ tự tăng dần của key của chúng. Các SortedMap được sử dụng cho các collection theo thứ tự tự nhiên của cặp key/value, chẳng hạn như từ điển và danh bạ điện thoại.
 
-###4.Các phương thức của interface Collection trong java
+### 4.Các phương thức của interface Collection trong java
 
 Có nhiều phương thức được khai báo trong interface Collection như sau:
 | Phương thức                              | Mô tả                                                                                                           |
@@ -73,9 +73,9 @@ public class Main {
 
 //Output: 1 2 3 4 5
 ```
-##II.Các collection phổ biến
+## II.Các collection phổ biến
 
-###1.List
+### 1.List
 
 List là một interface trong Collection. List là một danh sách các phần tử được sắp xếp theo thứ tự. List cho phép các phần tử trùng lặp và cho phép các phần tử null. List cung cấp các phương thức để truy cập các phần tử theo chỉ số và cho phép thay đổi các phần tử.
 
@@ -120,7 +120,7 @@ public class Main {
 1 4 3 2 1
 ```
 
-###2.ArrayList
+### 2.ArrayList
 
 **Lớp ArrayList** trong java là một lớp kế thừa lớp AbstractList và triển khai của List Interface trong Collections Framework nên nó sẽ có một vài đặc điểm và phương thức tương đồng với List. ArrayList được sử dụng như một mảng động để lưu trữ các phần tử.
 
@@ -185,7 +185,7 @@ public class Main {
 //Output
 1 4 3 2 1
 ```
-###3.Map
+### 3.Map
 
 Trong java, map được sử dụng để lưu trữ và truy xuất dữ liệu theo cặp key và value. Mỗi cặp key và value được gọi là mục nhập (entry). Map trong java chỉ chứa các giá trị key duy nhất. Map rất hữu ích nếu bạn phải tìm kiếm, cập nhật hoặc xóa các phần tử trên dựa vào các key.
 ***Những điểm cần ghi nhớ về Map:***
@@ -247,9 +247,9 @@ Key: VDT -> Value: Vu Dinh Thiet
 Key: DHA -> Value: Dinh Hoang Anh
 ```
 
-##III.Phân biệt List và ArrayList
+## III.Phân biệt List và ArrayList
 
-###1.Điểm khác nhau
+### 1.Điểm khác nhau
 
 ***List*** là một kiểu Collection và là Interface dành cho kiểu danh sách.
 
@@ -257,13 +257,13 @@ Key: DHA -> Value: Dinh Hoang Anh
 
 -> *Trong Java ``List`` là interface, là giao diện bên ngoài chứ bản thân nó k có gì vì vậy nó không thể tạo ra đối tượng mới. Muốn sử dụng List bạn phải implement nó qua ``ArrayList`` và ``LinkList``.*
 
-###2.Lúc nào cần dùng List, lúc nào cần dùng ArrayList
+### 2.Lúc nào cần dùng List, lúc nào cần dùng ArrayList
 
 Nếu dùng ``List (List a = new ArrayList(); )`` sẽ có ưu điểm là bạn có thể chuyển đổi ``ArrayList`` sang ``Vector``, ``LinkedList`` dễ dàng thông qua các method có trong List interface, còn nếu dùng kiểu: ``ArrayList a = new ArrayList();`` thì bạn sẽ khó làm được điều này, bạn sẽ chỉ dùng được những method trong ``ArrayList``.
 
 Điều đặc biệt quan trọng là nếu bạn dùng ``List``. Bạn không cần ép kiểu trong trường hợp dùng các obj khác nhau như ``ArrayList``
 
-##IV.Một số method thường dùng trong Collections
+## IV.Một số method thường dùng trong Collections
 
 Ví dụ: 
 ``List<Integer> list = new ArrayList<Integer>();``
