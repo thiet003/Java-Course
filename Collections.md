@@ -1,5 +1,5 @@
 
-##I.Collection và collections
+##Collection và collections
 
 "Collection" và "Collections" trong java là hai khái niệm khác nhau.
 
